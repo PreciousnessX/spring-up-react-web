@@ -2,7 +2,7 @@ import axios from 'axios';
 import { message } from 'antd';
 
 const instance = axios.create({
-  baseURL: 'http://localhost:8080', // 替换为你的 API 基础URL
+  baseURL: 'http://localhost:8088', // 替换为你的 API 基础URL
   timeout: 5000,
   headers: {
     'Content-Type': 'application/json',
