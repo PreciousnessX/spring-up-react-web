@@ -1,9 +1,9 @@
 import { Form, Input, Button, Card, message } from 'antd';
 import { UserOutlined, LockOutlined } from '@ant-design/icons';
-import axios from '../utils/axios';
-import '../styles/login.scss';
+import axios from '@/utils/axios';
+import '@/styles/login.scss';
 
-function LoginPage() {
+function Login() {
   const onFinish = async (values) => {
     try {
       const response = await axios.post('/api/auth/login', values);
@@ -53,4 +53,4 @@ function LoginPage() {
   );
 }
 
-export default LoginPage;
+export default Login;

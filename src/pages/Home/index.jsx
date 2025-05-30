@@ -1,6 +1,6 @@
 import { Layout } from 'antd'
-import './App.scss'
-import './styles/layout.scss'
+import './home.scss'
+import '@/styles/layout.scss'
 
 const { Header, Content, Footer } = Layout
 
