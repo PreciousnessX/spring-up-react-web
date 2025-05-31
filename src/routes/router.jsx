@@ -14,7 +14,11 @@ const router = createBrowserRouter([
   },
   {
     path: '/login',
-    element: <Login />,
+    element: (
+       <AuthGuard>
+        <Login />
+      </AuthGuard>
+    ),
   }
 ]);
 
